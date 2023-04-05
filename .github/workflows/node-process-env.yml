@@ -4,6 +4,7 @@ jobs:
   check-node-process-env:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: node ./src/node-process-env.js
         env:
           HOST: 127.0.0.1
